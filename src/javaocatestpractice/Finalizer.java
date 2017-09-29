@@ -196,13 +196,20 @@ public class Finalizer {
         LocalDateTime dateTime1 = LocalDateTime.of(d1, t1);
         DateTimeFormatter fmt = DateTimeFormatter.ofPattern("MMMM dd, yyyy, hh:mm");
         System.out.println(dateTime1.format(fmt)); // January 20, 2020, 11:12
-        
+
         System.out.println("------ Excellent Knowledge about Static Members -------");
         SampleStatic s = new SampleStatic();
         System.out.println(s.getName());
         s = null;
         s.NAME = "Pritesh";
         System.out.println(SampleStatic.getName());
+
+        s = new SampleStatic();
+        s.getDouble();
+        int $ = 100;
+        System.out.println($);
+        
+        convertStringToDoubleArray();
     }
 
     private static void performAnimalEnrichment(LocalDate start, LocalDate end) {
@@ -218,6 +225,22 @@ public class Finalizer {
         while (upTo.isBefore(end)) {
             System.out.println("give new toy: " + upTo);
             upTo = upTo.plus(period); // adds the period
+        }
+    }
+
+    private static void convertStringToDoubleArray() {
+        String dataa = "0.121 0.547 0.875 0.245";
+        String delimiter = " ";
+
+        String spectrainstring[] = dataa.split(delimiter);
+
+        int size = spectrainstring.length;
+
+        double[] spectraldata = new double[size];
+
+        for (int i = 0; i < size; i++) {
+            spectraldata[i] = Double.parseDouble(spectrainstring[i].toString());
+            System.out.println(spectraldata[i]);
         }
     }
 }

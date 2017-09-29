@@ -10,3 +10,4 @@ build/classes/.netbeans_update_resources
 *.mf
 
 *.properties
+/dist/
