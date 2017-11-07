@@ -209,7 +209,19 @@ public class Finalizer {
         int $ = 100;
         System.out.println($);
         
-        convertStringToDoubleArray();
+        //try...finally without catch
+        try{
+            convertStringToDoubleArray();
+           // System.exit(0);
+        }
+        catch(java.lang.ArrayIndexOutOfBoundsException aioe){
+                  System.out.println(aioe.toString());
+                }
+        finally{
+            System.out.println("Finally");
+        }
+
+        System.out.println("Successfully end of Program");
     }
 
     private static void performAnimalEnrichment(LocalDate start, LocalDate end) {

@@ -1,4 +1,0 @@
-SubClass
-javaocatestpractice.SubClass
-SuperClass
-javaocatestpractice.SuperClass

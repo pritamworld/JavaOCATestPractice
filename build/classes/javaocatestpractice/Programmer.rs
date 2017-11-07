@@ -1,6 +1,0 @@
-javaocatestpractice.Author
-Programmer
-javaocatestpractice.Writer
-javaocatestpractice.Programmer
-Author
-Writer

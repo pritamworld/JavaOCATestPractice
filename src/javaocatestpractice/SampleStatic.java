@@ -25,7 +25,7 @@ public class SampleStatic {
 
         int size = spectrainstring.length;
 
-        double[] spectraldata = {0.0};//new double[size];
+        double[] spectraldata = new double[size];
 
         for (int i = 0; i < size; i++) {
             spectraldata[i] = Double.parseDouble(spectrainstring[i].toString());
